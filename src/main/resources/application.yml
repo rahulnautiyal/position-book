@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: position-book
+  jackson:
+    default-property-inclusion: non_null
+server:
+  shutdown: graceful
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      probes:
+        enabled: true
